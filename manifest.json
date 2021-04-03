@@ -1,6 +1,6 @@
 {
-	"name": "YouTube Hero",
-	"description": "Doot",
+	"name": "YouTube Smart Choice",
+	"description": "",
 	"version": "1.0",
 	"manifest_version": 3,
 	"permissions": ["activeTab", "declarativeContent"],
@@ -12,7 +12,7 @@
 		}
 	],
 	"action": {
-		"default_title": "YouTube Extension Popup",
+		"default_title": "YouTube Smart Choice",
 		"default_popup": "./popup/popup.html",
 		"default_icon": {
    		}
