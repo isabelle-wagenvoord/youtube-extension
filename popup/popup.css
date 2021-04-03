@@ -1,6 +1,9 @@
 :root {
   /* theme colors */
   --dark: #292A2D;
+  /* shades of grey, from darkest to lightest */
+  --grey-tone-1: #616265;
+  --grey-tone-2: #C4C4C4;
   /* category colors */
   --green: #1BFF91;
   --yellow: #FFE74C;
@@ -12,6 +15,12 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: var(--dark);
+}
+
+button {
+  background-color: var(--green);
+  border-radius: 3em;
+  padding: 1em 3em;
 }
 
 #progress-ui {
