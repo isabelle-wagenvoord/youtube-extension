@@ -1,9 +1,13 @@
 :root {
   /* theme colors */
-  --dark: "#292A2D";
+  --dark: #292A2D;
 }
 html, body {
   width: 350px;
+  margin: 0;
+  padding: 0;
   background-color: var(--dark);
-  border-radius: 0 17em;
+}
+
+#popup-content {
 }
