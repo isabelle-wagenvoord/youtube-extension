@@ -1,7 +1,16 @@
+:root {
+  /* theme colors */
+  --dark: #292A2D;
+  /* category colors */
+  --green: #1BFF91;
+  --yellow: #FFE74C;
+  --red: #CC2936;
+}
 html, body {
-  width: 300px;
-  height: 300px;
-  background-color: #111111;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
 }
 p {
   size: 10px;
@@ -120,9 +129,9 @@ p.p2 {
   font-size: 10px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: var(--green);
   border-radius: 25px;
-  background-image: linear-gradient(to right, #4CAF50 0%, white 51%, white 100%)
+  background-image: linear-gradient(to right, var(--green) 0%, white 51%, white 100%)
 }
 
 .button5 {
@@ -138,9 +147,9 @@ p.p2 {
   font-size: 10px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #c3e409;
+  background-color: var(--yellow);
   border-radius: 25px;
-  background-image: linear-gradient(to right, #c3e409 0%, white 51%, white 100%)
+  background-image: linear-gradient(to right, var(--yellow) 0%, white 51%, white 100%)
 }
 
 .button6 {
@@ -156,7 +165,68 @@ p.p2 {
   font-size: 10px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #d63a13;
+  background-color: var(--red);
   border-radius: 25px;
-  background-image: linear-gradient(to right, #d63a13 0%, white 51%, white 100%)
+  background-image: linear-gradient(to right, var(--red) 0%, white 51%, white 100%)
 }
+
+#progress-ui {
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.progress-bar {
+  height: 10px;
+  margin: 1em;
+  position: relative;
+  background: #fff;
+  border-radius: 25px;
+  display: flex;
+  /* box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); */
+}
+
+.progress-bar > span {
+  display: block;
+  height: 100%;
+  background-color: var(--green);
+  /* background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  ); */
+  /* box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4); */
+  position: relative;
+}
+
+.progress-bar > span:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.progress-bar > span:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.progress-bar > span > .tooltip {
+  position: relative;
+  bottom: calc(100% + 1em);
+}
+
+.progress-bar > span.yellow {
+  background-color: var(--yellow);
+}
+
+.progress-bar > span.red {
+  background-color: var(--red);
+}
+
+#stats-progress {
+  margin-top: 3em;
+} 
