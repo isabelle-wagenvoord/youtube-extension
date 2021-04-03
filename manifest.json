@@ -2,11 +2,11 @@
 	"name": "YouTube Hero",
 	"description": "Doot",
 	"version": "1.0",
-	"manifest_version": "3",
+	"manifest_version": 3,
 	"permissions": ["activeTab", "declarativeContent"],
 	"content_scripts": [
 		{
-			"matches": ["youtube.com/*"],
+			"matches": ["https://youtube.com/*"],
 			"css": ["background.css"],
 			"js": ["background.js"]
 		}
@@ -15,7 +15,6 @@
 		"default_title": "YouTube Extension Popup",
 		"default_popup": "./popup/popup.html",
 		"default_icon": {
-      // need to create icon for extension
    		}
 	}
 
