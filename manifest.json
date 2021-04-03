@@ -11,10 +11,11 @@
 			"js": ["background.js"]
 		}
 	],
-	"browser_action": {
+	"action": {
 		"default_title": "YouTube Extension Popup",
-		"default_popup": "popup.html",
+		"default_popup": "./popup/popup.html",
 		"default_icon": {
+      // need to create icon for extension
    		}
 	}
 
