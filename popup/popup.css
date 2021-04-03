@@ -1,3 +1,162 @@
 html, body {
+  width: 300px;
+  height: 300px;
+  background-color: #111111;
+}
+p {
+  size: 10px;
+  color: white;
+}
+
+p.p2 {
+  size: 5px;
+  color: silver;
+}
+
+.split_top {
+  float: top;
+  height: 60%;
+}
+
+.split_bottom {
+  float: bottom;
+  height: 40%;
+  background-color: #202124;
+  margin-left: -8px;
+}
+
+.split_left {
+  float:left; 
+  width:20%;
+}
+
+.split_right {
+  float:right; 
+  width:80%;
+}
+
+.button1 {
+  border: none;
+  color: white;
+  width: 295px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border-radius: 25px;
+}
+
+.button2 {
+  border: none;
+  color: white;
+  left:50px;
+  width: 280px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #3e413e;
+  border-radius: 25px;
+}
+
+.button3 {
+  border: none;
+  color: white;
+  left:50px;
+  width: 280px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border-radius: 25px;
+}
+
+.btn-group button {
+  background-color: #606360; /* background */
+  border: 1px solid #606360; /* border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin:5px;
+  border-radius: 25px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.button4 {
+  border: none;
+  color: white;
+  left:50px;
+  width: 200px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #4CAF50 0%, white 51%, white 100%)
+}
+
+.button5 {
+  border: none;
+  color: white;
+  left:50px;
+  width: 150px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #c3e409;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #c3e409 0%, white 51%, white 100%)
+}
+
+.button6 {
+  border: none;
+  color: white;
+  left:50px;
   width: 100px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #d63a13;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #d63a13 0%, white 51%, white 100%)
 }
