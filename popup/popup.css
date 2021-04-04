@@ -5,6 +5,7 @@
   --green: #1BFF91;
   --yellow: #FFE74C;
   --red: #CC2936;
+  --blue: #1293CE;
 }
 html, body {
   width: 350px;
@@ -229,4 +230,25 @@ p.p2 {
 
 #stats-progress {
   margin-top: 3em;
-} 
+}
+
+/* flagged videos */
+#flagged-categories, #flagged-channels {
+  display: flex;
+}
+
+.pill {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 1em;
+  border: 0.1em solid #fff;
+  padding: 0.25em 1em;
+}
+
+.pill button {
+  background-color: #fff;
+  color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  margin-left: 0.2em;
+}
