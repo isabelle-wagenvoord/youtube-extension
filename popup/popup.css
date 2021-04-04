@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Varela+Round&display=swap');
+
 :root {
   /* theme colors */
   --dark: #292A2D;
@@ -7,13 +7,48 @@
   --green: #1BFF91;
   --yellow: #FFE74C;
   --red: #CC2936;
+
   --blue: #1293CE;
+
+  /* other variables */
+  --transition: cubic-bezier(0.32,0.31,0.41,1.27);
 }
->>>>>>> 1a99754fa16b0f48df278403f7b036e7d1595f68
+
+/* ANIMATIONS */
+/* for progress bars */
+@keyframes grow {
+  0% { width: 0; }
+}
+
+.animate-grow {
+  animation: grow 0.5s var(--transition);
+  /* animation: grow 0.5s ease-out; */
+}
+/* page transitions */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    /* transform: translateY(25%); */
+  }
+}
+body {
+  animation: fade-in 0.5s var(--transition);
+}
+
+/* GENERAL STYLES */
 html, body {
   width: 300px;
   height: 300px;
-  background-color: #111111;
+  background-color: var(--dark);
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 p {
   size: 10px;
@@ -50,14 +85,14 @@ form {
 
 .split_top {
   float: top;
-  height: 60%;
+  /* height: 60%; */
 }
 
 .split_bottom {
   float: bottom;
-  height: 40%;
+  /* height: 40%; */
   background-color: #202124;
-  margin-left: -8px;
+  /* margin-left: -8px; */
 }
 
 .split_left {
@@ -73,17 +108,18 @@ form {
 .button1 {
   border: none;
   color: white;
-  width: 295px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  font-size:10px;
-  display: inline-block;
+  display: block;
   font-size: 10px;
-  margin: 4px 2px;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: #6FBF77; 
   border-radius: 25px;
+  width: 80%;
+  margin: 1.5em auto;
+  font-family: "Varela Round";
+  font-weight: bold;
 }
 
 .button2 {
@@ -204,7 +240,6 @@ form {
     height: 70px;
 }
 
-<<<<<<< HEAD
 .button7 {
   border: none;
   color: white;
@@ -220,7 +255,53 @@ form {
   cursor: pointer;
   background-color: rgb(223, 219, 219);
   border-radius: 25px;
-=======
+}
+
+#main-menu {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.progress-bar {
+  height: 10px;
+  margin: 1em;
+  position: relative;
+  background: #fff;
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-start;
+  /* box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3); */
+}
+
+.progress-bar > span {
+  display: block;
+  height: 100%;
+  background-color: var(--green);
+  /* background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  ); */
+  /* box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4); */
+  position: relative;
+}
+
+.progress-bar > span:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.progress-bar > span:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .progress-bar > span > .tooltip {
   position: relative;
   bottom: calc(100% + 1em);
@@ -257,5 +338,4 @@ form {
   border: none;
   border-radius: 50%;
   margin-left: 0.2em;
->>>>>>> 1a99754fa16b0f48df278403f7b036e7d1595f68
 }
