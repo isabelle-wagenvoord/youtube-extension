@@ -5,3 +5,8 @@
 // 			"matches": ["chat-url-here"]
 // 		}
 //     ],
+
+const gridButtons = document.querySelectorAll('.grid > button');
+gridButtons.forEach(btn => {
+    btn.addEventListener('click', () => btn.classList.toggle('selected'));
+})

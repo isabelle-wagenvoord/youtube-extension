@@ -11,13 +11,15 @@ const categoryList = document.getElementById('flagged-categories');
 const channelList = document.getElementById('flagged-channels');
 
 function addCategory(c) {
-  categories.add(c);
-  categoryList.appendChild(generateFlagElement(c, 'category'));
+    if(categories.has(c)) return;
+    categories.add(c);
+    categoryList.appendChild(generateFlagElement(c, 'category'));
 }
 
 function addChannel(c) {
-  channels.add(c);
-  channelList.appendChild(generateFlagElement(c, 'channel'));
+    if(channels.has(c)) return;
+    channels.add(c);
+    channelList.appendChild(generateFlagElement(c, 'channel'));
 }
 
 function generateFlagElement(c, type) {

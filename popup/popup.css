@@ -28,7 +28,7 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-    /* transform: translateY(25%); */
+    transform: translateX(25%);
   }
 }
 body {
@@ -69,16 +69,44 @@ label {
   margin-left: 30px;
 }
 
-input {
+/* input {
   float:right;
   margin-right:40px;
-}
+} */
 
 form {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   size: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(auto-fill, 80px);
+  grid-auto-rows: 80px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.grid > button {
+  border-radius: 1em;
+  border: none;
+  font-family: "Varela Round";
+  cursor: pointer;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  transition: 0.2s var(--transition);
+}
+
+.grid > button:hover {
+  transform: scale(1.1);
+}
+
+.grid > button.selected {
+  transform: scale(1.1);
+  border: 0.2em solid var(--blue);
+  color: var(--blue);
 }
 
 .split_top {
@@ -118,6 +146,7 @@ form {
   margin: 1.5em auto;
   font-family: "Varela Round";
   font-weight: bold;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 
 .button2 {
@@ -253,7 +282,9 @@ form {
 
 .button7 {
   border: none;
-  color: white;
+  color: var(--dark);
+  font-weight: bold;
+  font-family: "Varela Round";
   left:50px;
   width: 100px;
   padding: 10px 20px; 
@@ -333,6 +364,19 @@ form {
 /* flagged videos */
 #flagged-categories, #flagged-channels {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.flag-input-group {
+  display: flex;
+}
+
+#submit-category, #submit-channel {
+  display: inline;
 }
 
 .pill {
