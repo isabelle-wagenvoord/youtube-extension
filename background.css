@@ -1,0 +1,21 @@
+:root {
+  --green: #1BFF91;
+  --yellow: #FFE74C;
+  --red: #CC2936;
+}
+
+.video-border {
+    border: 1em solid var(--green);
+}
+
+.video-green {
+    border-color: var(--green);
+}
+
+.video-yellow {
+    border-color: var(--yellow);
+}
+
+.video-red {
+    border-color: var(--red);
+}
