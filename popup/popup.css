@@ -34,8 +34,6 @@
 body {
   animation: fade-in 0.5s var(--transition);
 }
-
-/* GENERAL STYLES */
 html, body {
   width: 300px;
   height: 300px;
